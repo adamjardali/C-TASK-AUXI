@@ -1,26 +1,17 @@
 # TASK-AUXI
 This is the solution of the task
-## Usage
+# PowerPoint Automation Tool
 
-### PowerPointAnalyzer
+This is a Python tool for analyzing and managing PowerPoint presentations.
 
-The `PowerPointAnalyzer` component allows you to analyze and extract information from PowerPoint presentations. It provides the following features:
+## Setup
 
-#### Get Slide Properties
+### Virtual Environment
 
-You can use the `get_slide_properties` method to retrieve various properties of a slide, such as its title, dimensions, and background color. Here's an example of how to use it:
+To manage project dependencies and avoid conflicts, it's recommended to use a virtual environment:
 
-```python
-from powerpoint_analyzer import PowerPointAnalyzer
+1. Create a new virtual environment:
+   ```sh
+   python -m venv venv
 
-# Initialize PowerPointAnalyzer with the presentation file name
-presentation_file = "presentation.pptx"
-analyzer = PowerPointAnalyzer(presentation_file)
-
-# Get slide properties by slide number
-slide_number = 1
-slide_properties = analyzer.get_slide_properties(slide_number)
-
-# Print slide properties
-print(slide_properties)
 
